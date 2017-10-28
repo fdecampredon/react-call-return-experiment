@@ -1,0 +1,38 @@
+{
+  "name": "ReactNativeNavigators",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "postinstall": "cp -rf react-build/react-native/* ./node_modules/react-native/Libraries/Renderer/"
+  },
+  "dependencies": {
+    "babel-eslint": "^8.0.1",
+    "prop-types": "^15.6.0",
+    "react": "./react-build/packages/react",
+    "react-addons-pure-render-mixin": "^15.6.2",
+    "react-call-return": "./react-build/packages/react-call-return",
+    "react-native": "0.50-rc1",
+    "react-native-deprecated-custom-components": "^0.1.1",
+    "react-navigation": "^1.0.0-beta.15",
+    "react-router-native": "^4.2.0"
+  },
+  "devDependencies": {
+    "babel-jest": "21.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "^3.19.0 || ^4.3.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "jest": "21.2.1",
+    "prettier": "^1.5.3",
+    "react-test-renderer": "16.0.0-beta.5"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
